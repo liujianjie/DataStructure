@@ -1,0 +1,44 @@
+*.vs
+*.obj
+*.exe
+*.log
+*.pdb
+*.idb
+*.recipe
+*.ilk
+
+# Binaries
+**/bin/
+bin-int/
+游戏测试素材/
+需要的东西/
+小笔记/
+Intermediates/
+
+# files
+*.log
+*.ini
+提交到GitHub.bat
+*.dll
+*.pdb
+**.VC.db
+*.pch
+*.bat
+*.tlog
+
+# Visual Studio files and folder
+.vs/
+**.sln
+**.vcxproj
+**.vcxproj.filters
+**.vcxproj.user
+**.csproj
+遇到过的问题.docx
+
+
+# vulkan
+*.exe
+bfg.jar
+
+
+
