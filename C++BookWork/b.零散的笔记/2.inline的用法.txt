@@ -1,0 +1,9 @@
+inline可以用来重写 标准库函数？并且是内联的？
+
+就是很恶心，同一个h文件中，不能自定义标准函数，得用inline？
+
+3.就是声明与定义本该分开才能重写自定义标准函数，不然会报错，但是可以用inline来将声明与定义一起实现，
+
+防止报错
+
+rror LNK2005: "class std::basic_ostream<char,struct std::char_traits<char> > & __cdecl operator<<(class std::basic_ostream<char,struct std::char_traits<char> > &,class Sales_data const &)" (??6@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV01@ABVSales_data@@@Z) 已经在 17.1.2使用tuple返回多个值.obj 中定义

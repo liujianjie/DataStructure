@@ -1,0 +1,7 @@
+#### 数据结构
+ 《数据结构-C语言版》（严蔚敏,吴伟民版）课本源码+习题集解析		http://www.cnblogs.com/kangjianwei101/p/5221816.html
+ 铜陵学院 精品课程		http://jpkc.tlu.edu.cn/datastructure/
+ 上饶师范学院 精品课程	http://zlgc.sru.jx.cn/sxx/sjjg/
+ 可以在精品课程中下载讲义，习题，测试卷等。
+
+#### 江西专升本社区:http://www.jxzsb.club

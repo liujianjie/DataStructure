@@ -1,0 +1,38 @@
+1.输入输出运算符若使用了类模板的对象，需要模板前置声明
+
+2.可以把输入输出运算符放在类中或者类的前面声明函数形参类模板对象
+
+3.如：
+
+1) 外部
+
+template <unsigned H, unsigned W> class Screens;
+
+template <unsigned H, unsigned W>
+istream& operator >> (istream& is, Screens<H, W> &c);
+template <unsigned H, unsigned W>
+ostream& operator << (ostream& os, const Screens<H, W> &c);
+
+template <unsigned H, unsigned W>
+class Screens
+{
+	friend istream &operator >> 
+		(istream& is, Screens<H, W> &c);
+friend ostream &operator<< 
+		(ostream &os, const Screens<H, W> &c);
+
+2)  内部
+
+template <unsigned HH, unsigned WW>
+	friend ostream &operator <<(ostream &os, const Screens<HH, WW> &c);
+	template <unsigned HH, unsigned WW>
+	friend istream &operator >> (istream& is, Screens<HH, WW> &c);
+
+3）实例化
+
+Screens<6, 6> sc4;
+	cin >> sc4;
+	cout << sc4;
+
+
+

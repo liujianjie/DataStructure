@@ -1,0 +1,1 @@
+3)	为Sales_data定义的operator==是兼容的。为了处理特定关键字类型，无序容器会组合使用key_type对应的特例化hash版本和key_type上的相等运算符。不懂。

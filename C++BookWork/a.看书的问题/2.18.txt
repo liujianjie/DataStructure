@@ -1,0 +1,1 @@
+将#include <string.h>放入我们自定义的命名空间中

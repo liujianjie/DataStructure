@@ -1,0 +1,7 @@
+	int it = 12;
+	const int &ci1 = std::move(it);
+	int &&ci2 = std::move(it);
+	int ci3 = std::move(it);// 可以用一个左值接收右值引用！
+	// ci2 与ci3对于移动 是同等的 会冲突
+	fun(it);
+	//fun(std::move(it));

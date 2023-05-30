@@ -1,0 +1,4 @@
+int it = 12;
+	const int &ci1 = std::move(it);// 可以
+	int &&ci2 = std::move(it);// 右值引用
+	int ci3 = std::move(it);// 可以用一个左值接收右值引用！

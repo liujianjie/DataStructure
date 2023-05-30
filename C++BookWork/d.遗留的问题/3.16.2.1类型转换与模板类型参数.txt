@@ -1,0 +1,11 @@
+1.为什么
+
+template <typename T>
+int compare3(const T& v1, const T &v2)
+{
+	cout << "v1:" << v1 << ",v2:" << v2 << endl;
+	return 0;
+}
+可以，不是说若是引用，不能数组到指针的转换吗？为什么T为char[6]
+
+因为可以直接转换char[] 不会考虑到指针

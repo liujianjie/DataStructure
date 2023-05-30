@@ -1,0 +1,4 @@
+error C4996: 'std::uninitialized_copy::_Unchecked_iterators::_Deprecate': Call to 'std::uninitialized_copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators'
+
+属性-> c/c++ -> 预处理器 -> 预处理器定义 里添加 
+_SCL_SECURE_NO_WARNINGS

@@ -1,0 +1,19 @@
+这两个版本应该是确保T为int类型，不会是引用int&,这样编写维护代码容易？就是看谁优先匹配了？
+如：传入左值引用，第二个版本优先匹配会选择这个吧？则T为int
+传入右值引用，第一个版本优先匹配吧？则T为int
+但是我试了下
+只有传const int才会绑定到第二个版本
+Int，const右值，非const右值，都是给第一个版本！
+
+template <typename T> void f(T&&)
+
+template <typename T> void f(const T&)
+
+	int i2 = 4;
+	const int ci2 = 12;
+	const int &&i3 = 23;
+	f(i2);// 为什么选T&&版本,折叠比转换const更好吗
+	f(ci2);// 选第二个
+	f(42);// 选第一个
+	f(std::move(i3));// 选第一个，不知道为什么
+f(static_cast<const int&&>(i3));
