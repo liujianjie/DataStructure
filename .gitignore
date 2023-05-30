@@ -1,4 +1,3 @@
-*.vs
 *.obj
 *.exe
 *.log
@@ -6,6 +5,12 @@
 *.idb
 *.recipe
 *.ilk
+*.o
+**/x64/
+**/.vs/
+**/Debug/
+**.VC.db
+**/cpp-language-study-master/
 
 # Binaries
 **/bin/
@@ -21,7 +26,6 @@ Intermediates/
 提交到GitHub.bat
 *.dll
 *.pdb
-**.VC.db
 *.pch
 *.bat
 *.tlog
